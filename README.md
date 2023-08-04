@@ -1,6 +1,4 @@
-Project BIS Website CertifyCraft 
-Nama : Mutiara Azzahrani Artama
-Kelas : 4 ITE 2
+Project BIS Website CertifyCraft. Mutiara Azzahrani Artama. 4 ITE 2
 
 
 # CodeIgniter 4 Framework

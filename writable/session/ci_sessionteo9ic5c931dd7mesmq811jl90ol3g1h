@@ -1,0 +1,9 @@
+__ci_last_regenerate|i:1691081408;_ci_previous_url|s:44:"http://localhost:8080/index.php/Admin/upload";id|s:1:"1";name|s:7:"mutiara";loggedIn|b:1;umkmdata|N;error|s:236:"<!-- DEBUG-VIEW START 1 SYSTEMPATH\Validation\Views\list.php -->
+	<div class="errors" role="alert">
+		<ul>
+					<li>NIK Tidak boleh kosong</li>
+				</ul>
+	</div>
+
+<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Validation\Views\list.php -->
+";__ci_vars|a:3:{s:5:"error";s:3:"old";s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";}_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:16:{s:14:"csrf_test_name";s:32:"0d854a1f36ed5b02601a3fc4d7248b77";s:7:"tanggal";s:10:"2023-08-03";s:4:"nama";s:5:"xxxxx";s:7:"kelamin";s:4:"Pria";s:6:"alamat";s:3:"asa";s:4:"rtrw";s:7:"001/002";s:9:"kelurahan";s:3:"121";s:9:"kecamatan";s:3:"121";s:4:"kota";s:3:"121";s:8:"kategori";s:11:"Non Makanan";s:7:"produk1";s:9:"aaaaaaaaa";s:7:"produk2";s:5:"ikann";s:7:"produk3";s:0:"";s:7:"produk4";s:0:"";s:7:"akunnib";s:5:"Sudah";s:9:"akunhalal";s:5:"Belum";}}_ci_validation_errors|a:1:{s:3:"nik";s:22:"NIK Tidak boleh kosong";}

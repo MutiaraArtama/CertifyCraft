@@ -1,0 +1,450 @@
+CRITICAL - 2023-07-11 05:06:47 --> Invalid file: "main/home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('main/home.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('main/home', [], true)
+ 3 APPPATH\Controllers\User.php(10): view('main/home')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-11 05:11:19 --> Invalid file: "home-user/header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home-user/header.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('home-user/header', null, true)
+ 3 APPPATH\Views\home-user\baseHome.php(10): CodeIgniter\View\View->include('home-user/header')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home-user\\baseHome.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('home-user/baseHome', [], true)
+ 7 APPPATH\Controllers\User.php(10): view('home-user/baseHome')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-11 05:11:22 --> Invalid file: "home-user/header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home-user/header.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('home-user/header', null, true)
+ 3 APPPATH\Views\home-user\baseHome.php(10): CodeIgniter\View\View->include('home-user/header')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home-user\\baseHome.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('home-user/baseHome', [], true)
+ 7 APPPATH\Controllers\User.php(10): view('home-user/baseHome')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-11 05:18:42 --> Invalid file: "home-user/header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home-user/header.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('home-user/header', null, true)
+ 3 APPPATH\Views\home-user\baseHome.php(10): CodeIgniter\View\View->include('home-user/header')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home-user\\baseHome.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/home-user/baseHome', [], true)
+ 7 APPPATH\Controllers\User.php(10): view('/home-user/baseHome')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-11 09:16:38 --> Call to undefined function logged_in()
+in APPPATH\Views\home-user\navigation.php on line 21.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('home-user/navigation', null, true)
+ 4 APPPATH\Views\home-user\baseHome.php(8): CodeIgniter\View\View->include('home-user/navigation')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home-user\\baseHome.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/home-user/baseHome', [], true)
+ 8 APPPATH\Controllers\User.php(10): view('/home-user/baseHome')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-11 09:17:01 --> Call to undefined function logged_in()
+in APPPATH\Views\home-user\navigation.php on line 21.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('home-user/navigation', null, true)
+ 4 APPPATH\Views\home-user\baseHome.php(8): CodeIgniter\View\View->include('home-user/navigation')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home-user\\baseHome.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/home-user/baseHome', [], true)
+ 8 APPPATH\Controllers\User.php(10): view('/home-user/baseHome')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-11 09:17:29 --> syntax error, unexpected token "endif", expecting end of file
+in APPPATH\Views\home-user\navigation.php on line 24.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('home-user/navigation', null, true)
+ 3 APPPATH\Views\home-user\baseHome.php(8): CodeIgniter\View\View->include('home-user/navigation')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home-user\\baseHome.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/home-user/baseHome', [], true)
+ 7 APPPATH\Controllers\User.php(10): view('/home-user/baseHome')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-11 14:59:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 15:02:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 15:02:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 15:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 15:03:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 15:03:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 15:10:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 15:10:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 15:30:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 15:30:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 15:32:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 15:33:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-11 15:35:03 --> mysqli_sql_exception: Column 'nama' cannot be null in C:\xampp\htdocs\CertifyCraft\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CertifyCraft\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `um...', 0)
+#1 C:\xampp\htdocs\CertifyCraft\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `um...')
+#2 C:\xampp\htdocs\CertifyCraft\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `um...')
+#3 C:\xampp\htdocs\CertifyCraft\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `um...', Array, false)
+#4 C:\xampp\htdocs\CertifyCraft\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CertifyCraft\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CertifyCraft\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\CertifyCraft\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\CertifyCraft\app\Controllers\Form.php(35): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\CertifyCraft\system\CodeIgniter.php(934): App\Controllers\Form->save()
+#10 C:\xampp\htdocs\CertifyCraft\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+#11 C:\xampp\htdocs\CertifyCraft\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CertifyCraft\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\CertifyCraft\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-07-11 15:35:03 --> Column 'nama' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `umkmdata` (`tanggal`, `nama`, `kelamin`, `alamat`, `kecamatan`, `produk1`, `produk2`, `produk3`, `produk4`, `kategori`) VALUES (:tanggal:, :nama:, :kelamin:, :alamat:, :kecamatan:, :produk1:, :produk2:, :produk3:, :produk4:, :kategori:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Form.php(35): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Form->save()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-11 15:35:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 15:39:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 15:40:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 15:40:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-11 15:40:51 --> mysqli_sql_exception: Column 'nama' cannot be null in C:\xampp\htdocs\CertifyCraft\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CertifyCraft\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `um...', 0)
+#1 C:\xampp\htdocs\CertifyCraft\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `um...')
+#2 C:\xampp\htdocs\CertifyCraft\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `um...')
+#3 C:\xampp\htdocs\CertifyCraft\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `um...', Array, false)
+#4 C:\xampp\htdocs\CertifyCraft\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CertifyCraft\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CertifyCraft\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\CertifyCraft\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\CertifyCraft\app\Controllers\Form.php(35): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\CertifyCraft\system\CodeIgniter.php(934): App\Controllers\Form->save()
+#10 C:\xampp\htdocs\CertifyCraft\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+#11 C:\xampp\htdocs\CertifyCraft\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CertifyCraft\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\CertifyCraft\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-07-11 15:40:51 --> Column 'nama' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `umkmdata` (`tanggal`, `nama`, `kelamin`, `alamat`, `kecamatan`, `produk1`, `produk2`, `produk3`, `produk4`, `kategori`) VALUES (:tanggal:, :nama:, :kelamin:, :alamat:, :kecamatan:, :produk1:, :produk2:, :produk3:, :produk4:, :kategori:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Form.php(35): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Form->save()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-07-11 15:42:28 --> mysqli_sql_exception: Column 'nama' cannot be null in C:\xampp\htdocs\CertifyCraft\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CertifyCraft\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `um...', 0)
+#1 C:\xampp\htdocs\CertifyCraft\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `um...')
+#2 C:\xampp\htdocs\CertifyCraft\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `um...')
+#3 C:\xampp\htdocs\CertifyCraft\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `um...', Array, false)
+#4 C:\xampp\htdocs\CertifyCraft\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CertifyCraft\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CertifyCraft\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\CertifyCraft\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\CertifyCraft\app\Controllers\Form.php(35): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\CertifyCraft\system\CodeIgniter.php(934): App\Controllers\Form->save()
+#10 C:\xampp\htdocs\CertifyCraft\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+#11 C:\xampp\htdocs\CertifyCraft\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CertifyCraft\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\CertifyCraft\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-07-11 15:42:28 --> Column 'nama' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `umkmdata` (`tanggal`, `nama`, `kelamin`, `alamat`, `kecamatan`, `produk1`, `produk2`, `produk3`, `produk4`, `kategori`) VALUES (:tanggal:, :nama:, :kelamin:, :alamat:, :kecamatan:, :produk1:, :produk2:, :produk3:, :produk4:, :kategori:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Form.php(35): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Form->save()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-07-11 15:43:10 --> mysqli_sql_exception: Column 'nama' cannot be null in C:\xampp\htdocs\CertifyCraft\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CertifyCraft\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `um...', 0)
+#1 C:\xampp\htdocs\CertifyCraft\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `um...')
+#2 C:\xampp\htdocs\CertifyCraft\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `um...')
+#3 C:\xampp\htdocs\CertifyCraft\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `um...', Array, false)
+#4 C:\xampp\htdocs\CertifyCraft\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CertifyCraft\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CertifyCraft\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\CertifyCraft\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\CertifyCraft\app\Controllers\Form.php(35): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\CertifyCraft\system\CodeIgniter.php(934): App\Controllers\Form->save()
+#10 C:\xampp\htdocs\CertifyCraft\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+#11 C:\xampp\htdocs\CertifyCraft\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CertifyCraft\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\CertifyCraft\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-07-11 15:43:10 --> Column 'nama' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `umkmdata` (`tanggal`, `nama`, `kelamin`, `alamat`, `kecamatan`, `produk1`, `produk2`, `produk3`, `produk4`, `kategori`) VALUES (:tanggal:, :nama:, :kelamin:, :alamat:, :kecamatan:, :produk1:, :produk2:, :produk3:, :produk4:, :kategori:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Form.php(35): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Form->save()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-11 15:43:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-11 15:44:51 --> mysqli_sql_exception: Column 'nama' cannot be null in C:\xampp\htdocs\CertifyCraft\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CertifyCraft\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `um...', 0)
+#1 C:\xampp\htdocs\CertifyCraft\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `um...')
+#2 C:\xampp\htdocs\CertifyCraft\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `um...')
+#3 C:\xampp\htdocs\CertifyCraft\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `um...', Array, false)
+#4 C:\xampp\htdocs\CertifyCraft\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CertifyCraft\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CertifyCraft\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\CertifyCraft\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\CertifyCraft\app\Controllers\Form.php(35): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\CertifyCraft\system\CodeIgniter.php(934): App\Controllers\Form->save()
+#10 C:\xampp\htdocs\CertifyCraft\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+#11 C:\xampp\htdocs\CertifyCraft\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CertifyCraft\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\CertifyCraft\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-07-11 15:44:51 --> Column 'nama' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `umkmdata` (`tanggal`, `nama`, `kelamin`, `alamat`, `kecamatan`, `produk1`, `produk2`, `produk3`, `produk4`, `kategori`) VALUES (:tanggal:, :nama:, :kelamin:, :alamat:, :kecamatan:, :produk1:, :produk2:, :produk3:, :produk4:, :kategori:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Form.php(35): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Form->save()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-07-11 15:45:02 --> mysqli_sql_exception: Column 'nama' cannot be null in C:\xampp\htdocs\CertifyCraft\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CertifyCraft\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `um...', 0)
+#1 C:\xampp\htdocs\CertifyCraft\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `um...')
+#2 C:\xampp\htdocs\CertifyCraft\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `um...')
+#3 C:\xampp\htdocs\CertifyCraft\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `um...', Array, false)
+#4 C:\xampp\htdocs\CertifyCraft\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CertifyCraft\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CertifyCraft\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\CertifyCraft\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\CertifyCraft\app\Controllers\Form.php(35): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\CertifyCraft\system\CodeIgniter.php(934): App\Controllers\Form->save()
+#10 C:\xampp\htdocs\CertifyCraft\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+#11 C:\xampp\htdocs\CertifyCraft\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CertifyCraft\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\CertifyCraft\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-07-11 15:45:02 --> Column 'nama' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `umkmdata` (`tanggal`, `nama`, `kelamin`, `alamat`, `kecamatan`, `produk1`, `produk2`, `produk3`, `produk4`, `kategori`) VALUES (:tanggal:, :nama:, :kelamin:, :alamat:, :kecamatan:, :produk1:, :produk2:, :produk3:, :produk4:, :kategori:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Form.php(35): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Form->save()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-07-11 15:45:19 --> mysqli_sql_exception: Column 'nama' cannot be null in C:\xampp\htdocs\CertifyCraft\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CertifyCraft\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `um...', 0)
+#1 C:\xampp\htdocs\CertifyCraft\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `um...')
+#2 C:\xampp\htdocs\CertifyCraft\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `um...')
+#3 C:\xampp\htdocs\CertifyCraft\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `um...', Array, false)
+#4 C:\xampp\htdocs\CertifyCraft\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CertifyCraft\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CertifyCraft\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\CertifyCraft\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\CertifyCraft\app\Controllers\Form.php(35): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\CertifyCraft\system\CodeIgniter.php(934): App\Controllers\Form->save()
+#10 C:\xampp\htdocs\CertifyCraft\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+#11 C:\xampp\htdocs\CertifyCraft\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CertifyCraft\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\CertifyCraft\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-07-11 15:45:19 --> Column 'nama' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `umkmdata` (`tanggal`, `nama`, `kelamin`, `alamat`, `kecamatan`, `produk1`, `produk2`, `produk3`, `produk4`, `kategori`) VALUES (:tanggal:, :nama:, :kelamin:, :alamat:, :kecamatan:, :produk1:, :produk2:, :produk3:, :produk4:, :kategori:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Form.php(35): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Form->save()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-07-11 15:45:52 --> mysqli_sql_exception: Column 'nama' cannot be null in C:\xampp\htdocs\CertifyCraft\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CertifyCraft\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `um...', 0)
+#1 C:\xampp\htdocs\CertifyCraft\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `um...')
+#2 C:\xampp\htdocs\CertifyCraft\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `um...')
+#3 C:\xampp\htdocs\CertifyCraft\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `um...', Array, false)
+#4 C:\xampp\htdocs\CertifyCraft\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CertifyCraft\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CertifyCraft\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\CertifyCraft\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\CertifyCraft\app\Controllers\Form.php(35): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\CertifyCraft\system\CodeIgniter.php(934): App\Controllers\Form->save()
+#10 C:\xampp\htdocs\CertifyCraft\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+#11 C:\xampp\htdocs\CertifyCraft\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CertifyCraft\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\CertifyCraft\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-07-11 15:45:52 --> Column 'nama' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `umkmdata` (`tanggal`, `nama`, `kelamin`, `alamat`, `kecamatan`, `produk1`, `produk2`, `produk3`, `produk4`, `kategori`) VALUES (:tanggal:, :nama:, :kelamin:, :alamat:, :kecamatan:, :produk1:, :produk2:, :produk3:, :produk4:, :kategori:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Form.php(35): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Form->save()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-07-11 15:45:53 --> mysqli_sql_exception: Column 'nama' cannot be null in C:\xampp\htdocs\CertifyCraft\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CertifyCraft\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `um...', 0)
+#1 C:\xampp\htdocs\CertifyCraft\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `um...')
+#2 C:\xampp\htdocs\CertifyCraft\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `um...')
+#3 C:\xampp\htdocs\CertifyCraft\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `um...', Array, false)
+#4 C:\xampp\htdocs\CertifyCraft\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CertifyCraft\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CertifyCraft\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\CertifyCraft\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\CertifyCraft\app\Controllers\Form.php(35): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\CertifyCraft\system\CodeIgniter.php(934): App\Controllers\Form->save()
+#10 C:\xampp\htdocs\CertifyCraft\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+#11 C:\xampp\htdocs\CertifyCraft\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CertifyCraft\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\CertifyCraft\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-07-11 15:45:53 --> Column 'nama' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `umkmdata` (`tanggal`, `nama`, `kelamin`, `alamat`, `kecamatan`, `produk1`, `produk2`, `produk3`, `produk4`, `kategori`) VALUES (:tanggal:, :nama:, :kelamin:, :alamat:, :kecamatan:, :produk1:, :produk2:, :produk3:, :produk4:, :kategori:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Form.php(35): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Form->save()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-11 15:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-11 15:47:04 --> mysqli_sql_exception: Column 'nama' cannot be null in C:\xampp\htdocs\CertifyCraft\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CertifyCraft\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `um...', 0)
+#1 C:\xampp\htdocs\CertifyCraft\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `um...')
+#2 C:\xampp\htdocs\CertifyCraft\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `um...')
+#3 C:\xampp\htdocs\CertifyCraft\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `um...', Array, false)
+#4 C:\xampp\htdocs\CertifyCraft\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CertifyCraft\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CertifyCraft\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\CertifyCraft\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\CertifyCraft\app\Controllers\Form.php(35): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\CertifyCraft\system\CodeIgniter.php(934): App\Controllers\Form->save()
+#10 C:\xampp\htdocs\CertifyCraft\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+#11 C:\xampp\htdocs\CertifyCraft\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CertifyCraft\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\CertifyCraft\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-07-11 15:47:04 --> Column 'nama' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `umkmdata` (`tanggal`, `nama`, `kelamin`, `alamat`, `kecamatan`, `produk1`, `produk2`, `produk3`, `produk4`, `kategori`) VALUES (:tanggal:, :nama:, :kelamin:, :alamat:, :kecamatan:, :produk1:, :produk2:, :produk3:, :produk4:, :kategori:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Form.php(35): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Form->save()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-11 15:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 15:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 15:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 15:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 15:47:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-07-11 15:47:37 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+CRITICAL - 2023-07-11 15:47:37 --> Undefined variable $j
+in APPPATH\Views\umkmdata\index.php on line 92.
+ 1 APPPATH\Views\umkmdata\index.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $j', 'APPPATH\\Views\\umkmdata\\index.php', 92)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\umkmdata\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('umkmdata/index', [], true)
+ 5 APPPATH\Controllers\Admin.php(43): view('umkmdata/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-11 15:48:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-07-11 15:48:14 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+INFO - 2023-07-11 15:49:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-07-11 15:49:20 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+INFO - 2023-07-11 15:49:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 15:49:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 15:49:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-07-11 15:49:58 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+INFO - 2023-07-11 15:50:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-07-11 15:50:17 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+INFO - 2023-07-11 15:50:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-07-11 15:50:24 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+INFO - 2023-07-11 15:50:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-07-11 15:50:24 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+INFO - 2023-07-11 15:50:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-07-11 15:50:32 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+INFO - 2023-07-11 15:50:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-07-11 15:50:32 --> Session: Sessions is enabled, and one exists.Please don't $session->start();

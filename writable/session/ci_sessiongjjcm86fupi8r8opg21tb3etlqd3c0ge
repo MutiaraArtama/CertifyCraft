@@ -1,0 +1,10 @@
+__ci_last_regenerate|i:1692125182;_ci_previous_url|s:44:"http://localhost:8080/index.php/Admin/upload";id|s:1:"1";name|s:7:"mutiara";loggedIn|b:1;umkmdata|N;error|s:292:"<!-- DEBUG-VIEW START 1 SYSTEMPATH\Validation\Views\list.php -->
+	<div class="errors" role="alert">
+		<ul>
+					<li>Kode Pos Tidak boleh kosong</li>
+					<li>Nama Usaha/Merek Tidak boleh kosong</li>
+				</ul>
+	</div>
+
+<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Validation\Views\list.php -->
+";__ci_vars|a:3:{s:5:"error";s:3:"old";s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";}_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:16:{s:14:"csrf_test_name";s:32:"58cd01a263ed95fc7f93c046b1f0497a";s:7:"tanggal";s:10:"2023-08-16";s:3:"nik";s:17:"01233456789054321";s:4:"nama";s:3:"gag";s:7:"kelamin";s:4:"Pria";s:6:"alamat";s:3:"sas";s:4:"rtrw";s:5:"11212";s:9:"kelurahan";s:3:"asa";s:9:"kecamatan";s:3:"asa";s:4:"kota";s:3:"asa";s:7:"produk1";s:2:"as";s:7:"produk2";s:2:"as";s:7:"produk3";s:0:"";s:7:"produk4";s:0:"";s:7:"akunnib";s:5:"Belum";s:9:"akunhalal";s:5:"Belum";}}_ci_validation_errors|a:2:{s:7:"kodepos";s:27:"Kode Pos Tidak boleh kosong";s:5:"merek";s:35:"Nama Usaha/Merek Tidak boleh kosong";}

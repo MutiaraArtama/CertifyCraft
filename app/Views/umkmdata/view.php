@@ -10,29 +10,28 @@
 
 <body>
     <div class="container mt-5">
-        <h2>Generate PDF in Codeigniter from View</h2>
+        <h2>Data UMKM Untuk Pembuatan NIB Dan Sertif Halal.</h2>
         <div class="d-flex flex-row-reverse bd-highlight">
             <table class="table table-striped table-hover mt-4">
                 <tbody>
                     <tr>
                         <th>No</th>
-                        <th>Tanggal</th>
                         <th>NIK</th>
                         <th>Nama</th>
                         <th>Jenis Kelamin</th>
                         <th>Alamat</th>
-                        <th>Rt/Rw</th>
                         <th>Kelurahan</th>
                         <th>Kecamatan</th>
                         <th>Kota</th>
-                        <th>Kategori</th>
-                        <th>Produk1</th>
-                        <th>Produk2</th>
-                        <th>Produk3</th>
-                        <th>Produk4</th>
+                        <th>Nama Usaha</th>
+                        <th>Produk 1</th>
+                        <th>Produk 2</th>
+                        <th>Produk 3</th>
+                        <th>Produk 4</th>
                         <th>Status Akun NIB</th>
                         <th>Status Akun Halal</th>
                         <th>Kendala</th>
+                        <th>Jumlah Pengajuan</th>
                     </tr>
                     <?php
                     $i = 1;
@@ -41,9 +40,6 @@
                         <tr>
                             <td>
                                 <?= $i++; ?>
-                            </td>
-                            <td>
-                                <?= $j['tanggal']; ?>
                             </td>
                             <td>
                                 <?= $j['nik']; ?>
@@ -58,9 +54,6 @@
                                 <?= $j['alamat']; ?>
                             </td>
                             <td>
-                                <?= $j['rtrw']; ?>
-                            </td>
-                            <td>
                                 <?= $j['kelurahan']; ?>
                             </td>
                             <td>
@@ -70,7 +63,7 @@
                                 <?= $j['kota']; ?>
                             </td>
                             <td>
-                                <?= $j['kategori']; ?>
+                                <?= $j['merek']; ?>
                             </td>
                             <td>
                                 <?= $j['produk1']; ?>
@@ -93,8 +86,9 @@
                             <td>
                                 <?= $j['kendala']; ?>
                             </td>
-                            
-
+                            <td>
+                                <?= $j['pengajuan']; ?>
+                            </td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>

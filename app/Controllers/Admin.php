@@ -82,6 +82,12 @@ class Admin extends BaseController
                         'required' => 'Tanggal Tidak boleh kosong'
                     ]
                 ],
+                'nik' => [
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => 'NIK Tidak boleh kosong'
+                    ]
+                ],
                 'nama' => [
                     'rules' => 'required',
                     'errors' => [
@@ -100,10 +106,10 @@ class Admin extends BaseController
                         'required' => 'Alamat Tidak boleh kosong'
                     ]
                 ],
-                'rtrw' => [
+                'kodepos' => [
                     'rules' => 'required',
                     'errors' => [
-                        'required' => 'RT/RW Tidak boleh kosong'
+                        'required' => 'Kode Pos Tidak boleh kosong'
                     ]
                 ],
                 'kelurahan' => [
@@ -124,10 +130,10 @@ class Admin extends BaseController
                         'required' => 'Kota Tidak boleh kosong'
                     ]
                 ],
-                'kategori' => [
+                'merek' => [
                     'rules' => 'required',
                     'errors' => [
-                        'required' => 'Kategori Tidak boleh kosong'
+                        'required' => 'Nama Usaha/Merek Tidak boleh kosong'
                     ]
                 ],
                 'produk1' => [
@@ -148,11 +154,11 @@ class Admin extends BaseController
             "nama" => $this->request->getPost('nama'),
             "kelamin" => $this->request->getPost('kelamin'),
             "alamat" => $this->request->getPost('alamat'),
-            "rtrw" => $this->request->getPost('rtrw'),
             "kelurahan" => $this->request->getPost('kelurahan'),
             "kecamatan" => $this->request->getPost('kecamatan'),
             "kota" => $this->request->getPost('kota'),
-            "kategori" => $this->request->getPost('kategori'),
+            "kodepos" => $this->request->getPost('kodepos'),
+            "merek" => $this->request->getPost('merek'),
             "produk1" => $this->request->getPost('produk1'),
             "produk2" => $this->request->getPost('produk2'),
             "produk3" => $this->request->getPost('produk3'),
@@ -188,9 +194,14 @@ class Admin extends BaseController
     public function update($id)
     {
         $data = [
+            "jenisproduk1" => $this->request->getPost('jenisproduk1'),
+            "jenisproduk2" => $this->request->getPost('jenisproduk2'),
+            "jenisproduk3" => $this->request->getPost('jenisproduk3'),
+            "jenisproduk4" => $this->request->getPost('jenisproduk4'),
             "akunnib" => $this->request->getPost('akunnib'),
             "akunhalal" => $this->request->getPost('akunhalal'),
             "kendala" => $this->request->getPost('kendala'),
+            "pengajuan" => $this->request->getPost('pengajuan'),
         ];
         $this->umkmdataModel->update($id, $data);
 
@@ -226,18 +237,23 @@ class Admin extends BaseController
                 'Nama',
                 'Jenis_Kelamin',
                 'Alamat',
-                'Rt/Rw',
                 'Kelurahan',
                 'Kecamatan',
                 'Kota',
-                'Kategori',
+                'Kodepos',  
+                'Nama_Usaha',
                 'Produk1',
+                'Jenis_Produk1',
                 'Produk2',
+                'Jenis_Produk2',
                 'Produk3',
+                'Jenis_Produk3',
                 'Produk4',
+                'Jenis_Produk4',
                 'Status_Akun_NIB',
                 'Status_Akun_Halal',
                 'Kendala',
+                'Jumlah_Pengajuan',
             )
         ); // Menulis header kolom
 
@@ -246,9 +262,11 @@ class Admin extends BaseController
                 $file,
                 array(
                     $row['tanggal'], $row['nik'], $row['nama'], $row['kelamin'], $row['alamat'],
-                    $row['rtrw'], $row['kelurahan'], $row['kecamatan'], $row['kota'], 
-                    $row['kategori'], $row['produk1'], $row['produk2'], $row['produk3'], 
-                    $row['produk4'], $row['akunnib'],  $row['akunhalal'], $row['kendala'], 
+                    $row['kelurahan'], $row['kecamatan'], $row['kota'], $row['kodepos'], 
+                    $row['merek'], $row['produk1'], $row['jenisproduk1'], $row['produk2'], 
+                    $row['jenisproduk2'], $row['produk3'], $row['jenisproduk3'],
+                    $row['produk4'], $row['jenisproduk4'], $row['akunnib'],  $row['akunhalal'], 
+                    $row['kendala'], $row['pengajuan'],
                 )
             ); // Menulis data
         }
@@ -269,7 +287,7 @@ class Admin extends BaseController
         ];
         $dompdf = new Dompdf();
         $dompdf->loadHtml(view('umkmdata/view', $data));
-        $dompdf->setPaper('A4', 'landscape');
+        $dompdf->setPaper('A3', 'landscape');
         $dompdf->render();
 
         $output = $dompdf->output();

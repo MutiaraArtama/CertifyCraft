@@ -32,11 +32,7 @@ class CreateUmkmDataTable extends Migration
             ],
             "alamat" => [
                 "type" => "VARCHAR",
-                "constraint" => "10000",
-            ],
-            "rtrw" => [
-                "type" => "VARCHAR",
-                "constraint" => "20",
+                "constraint" => "5000",
             ],
             "kelurahan" => [
                 "type" => "VARCHAR",
@@ -50,23 +46,43 @@ class CreateUmkmDataTable extends Migration
                 "type" => "VARCHAR",
                 "constraint" => "200",
             ],
-            "kategori" => [
+            "kodepos" => [
+                "type" => "INT",
+                "constraint" => "6",
+            ],
+            "merek" => [
                 "type" => "VARCHAR",
                 "constraint" => "200",
             ],
             "produk1" => [
                 "type" => "VARCHAR",
+                "constraint" => "500",
+            ],
+            "jenisproduk1" => [
+                "type" => "VARCHAR",
                 "constraint" => "1000",
             ],
             "produk2" => [
+                "type" => "VARCHAR",
+                "constraint" => "500",
+            ],
+            "jenisproduk2" => [
                 "type" => "VARCHAR",
                 "constraint" => "1000",
             ],
             "produk3" => [
                 "type" => "VARCHAR",
+                "constraint" => "500",
+            ],
+            "jenisproduk3" => [
+                "type" => "VARCHAR",
                 "constraint" => "1000",
             ],
             "produk4" => [
+                "type" => "VARCHAR",
+                "constraint" => "500",
+            ],
+            "jenisproduk4" => [
                 "type" => "VARCHAR",
                 "constraint" => "1000",
             ],
@@ -80,9 +96,12 @@ class CreateUmkmDataTable extends Migration
             ],
             "kendala" => [
                 "type" => "VARCHAR",
-                "constraint" => "1000",
+                "constraint" => "500",
             ],
-            
+            "pengajuan" => [
+                "type" => "INT",
+                "constraint" => "10",
+            ],
         ];
         $this->forge->addKey('id', true);
         $this->forge->addField($fields);

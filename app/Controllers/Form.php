@@ -68,10 +68,10 @@ class Form extends BaseController
                         'required' => 'Alamat Tidak boleh kosong'
                     ]
                 ],
-                'rtrw' => [
+                'kodepos' => [
                     'rules' => 'required',
                     'errors' => [
-                        'required' => 'RT/RW Tidak boleh kosong'
+                        'required' => 'Kode Pos Tidak boleh kosong'
                     ]
                 ],
                 'kelurahan' => [
@@ -92,10 +92,10 @@ class Form extends BaseController
                         'required' => 'Kota Tidak boleh kosong'
                     ]
                 ],
-                'kategori' => [
+                'merek' => [
                     'rules' => 'required',
                     'errors' => [
-                        'required' => 'Kategori Tidak boleh kosong'
+                        'required' => 'Nama Usaha/Merek Tidak boleh kosong'
                     ]
                 ],
                 'produk1' => [
@@ -116,18 +116,17 @@ class Form extends BaseController
             "nama" => $this->request->getPost('nama'),
             "kelamin" => $this->request->getPost('kelamin'),
             "alamat" => $this->request->getPost('alamat'),
-            "rtrw" => $this->request->getPost('rtrw'),
             "kelurahan" => $this->request->getPost('kelurahan'),
             "kecamatan" => $this->request->getPost('kecamatan'),
             "kota" => $this->request->getPost('kota'),
-            "kategori" => $this->request->getPost('kategori'),
+            "kodepos" => $this->request->getPost('kodepos'),
+            "merek" => $this->request->getPost('merek'),
             "produk1" => $this->request->getPost('produk1'),
             "produk2" => $this->request->getPost('produk2'),
             "produk3" => $this->request->getPost('produk3'),
             "produk4" => $this->request->getPost('produk4'),
             "akunnib" => $this->request->getPost('akunnib'),
-            "akunhalal" => $this->request->getPost('akunhalal'),
-            
+            "akunhalal" => $this->request->getPost('akunhalal'),  
         ];
         $this->umkmdataModel->insert($data);
         session()->setFlashdata('success', 'Data Berhasil diupload');

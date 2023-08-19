@@ -34,11 +34,11 @@
                         <form method="post" action="<?= base_url(); ?>/Admin/save" enctype="multipart/form-data">
                         
                         <?= csrf_field(); ?>
-                            <div class="mb-3">
-                                <label for="tanggal" class="form-label">Tanggal</label>
-                                <input type="date" class="form-control" id="tanggal" name="tanggal"
-                                    value="<?= old('tanggal'); ?>" style="height: 50px;">
-                            </div>
+                    <div class="mb-3">
+                        <label for="tanggal" class="form-label">Tanggal</label>
+                        <input type="date" class="form-control" id="tanggal" name="tanggal"
+                            value="<?= old('tanggal'); ?>" style="height: 50px;">
+                    </div>
                     
                     <div class="mb-3">
                         <label for="nik" class="form-label">NIK (Nomor Induk Kependudukan)</label>
@@ -75,16 +75,16 @@
                                 <input type="text" class="form-control" id="alamat"
                                     name="alamat" value="<?= old('alamat'); ?>" style="height: 100px; vertical-align: top;">
                             </div>
-                            </div>
+                        </div>
 
                         <div class="form-group col-3">
                             <br>
                             <div class="mb-3">
-                                <label for="rtrw" class="form-label">Rt/Rw</label>
-                                <input type="text" class="form-control" id="rtrw"
-                                    name="rtrw" value="<?= old('rtrw'); ?>" style="height: 55px; vertical-align: top;">
+                                <label for="kodepos" class="form-label">Kodepos</label>
+                                <input type="text" class="form-control" id="kodepos"
+                                    name="kodepos" value="<?= old('kodepos'); ?>" style="height: 55px; vertical-align: top;">
                             </div>
-                            </div>
+                        </div>
                     </div>
 
                     <div class="row">
@@ -114,13 +114,9 @@
                     </div>
 
                             <div class="mb-3">
-                                <label for="kategori" class="form-label">Kategori Usaha</label>
-                                <select class="form-control" id="kategori" name="kategori"
-                                    value="<?= old('kategori'); ?>" style="height: 55px; vertical-align: top; ">
-                                    <option value="Pria">--Pilih Kategori--</option>
-                                    <option value="Makanan">Makanan</option>
-                                    <option value="Non Makanan">Non-Makanan</option>
-                                </select>
+                                <label for="merek" class="form-label">Nama Usaha/Merek</label>
+                                <input type="text" class="form-control" id="merek"
+                                    name="merek" value="<?= old('merek'); ?>" style="height: 55px; vertical-align: top;">
                             </div>
 
                             <div class="mb-3">

@@ -14,7 +14,7 @@ class UmkmDataModel extends Model
     protected $returnType = 'array';
     protected $useSoftDeletes = false;
     protected $protectFields = true;
-    protected $allowedFields = ['tanggal', 'nik', 'nama', 'kelamin', 'alamat', 'rtrw', 'kelurahan', 'kecamatan', 'kota', 'kategori', 'produk1', 'produk2', 'produk3', 'produk4', 'akunnib', 'akunhalal', 'kendala'];
+    protected $allowedFields = ['tanggal', 'nik', 'nama', 'kelamin', 'alamat', 'kelurahan', 'kecamatan', 'kota', 'kodepos', 'merek', 'produk1', 'jenisproduk1', 'produk2', 'jenisproduk2', 'produk3', 'jenisproduk3', 'produk4', 'jenisproduk4',  'akunnib', 'akunhalal', 'kendala', 'pengajuan'];
 
     // Dates
     protected $useTimestamps = false;

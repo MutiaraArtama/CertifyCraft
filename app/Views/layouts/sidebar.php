@@ -31,11 +31,11 @@
   </li><!-- End Register Page Nav -->
 
   <li class="nav-item">
-    <a class="nav-link collapsed" href="/login">
-      <i class="bi bi-box-arrow-in-right"></i>
-      <span>Login</span>
+    <a class="nav-link collapsed" href="logout">
+      <i class="bi bi-box-arrow-right"></i>
+      <span>Log out</span>
     </a>
-  </li><!-- End Login Page Nav -->
+  </li><!-- End Logout Page Nav -->
 </ul>
 
 </aside><!-- End Sidebar-->

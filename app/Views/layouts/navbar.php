@@ -10,7 +10,7 @@
 
 </div><!-- End Logo -->
 
-<nav class="header-nav ms-auto" style="margin-right:50px;">
+<nav class="header-nav ms-auto" style="margin-right:90px;">
       <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
       <img alt="image" src="<?= base_url() ?>assets/img/avatar-1.jpg"
                             class="rounded-circle mr-1">
@@ -18,13 +18,6 @@
       </a><!-- End Profile Iamge Icon -->
 
       <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
-        <li>
-          <a class="dropdown-item d-flex align-items-center" href="......">
-            <i class="bi bi-person"></i>
-            <span>My Profile</span>
-          </a>
-        </li>
-        <li>
           <hr class="dropdown-divider">
         </li>
        

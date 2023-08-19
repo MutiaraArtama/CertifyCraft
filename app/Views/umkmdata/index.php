@@ -59,19 +59,24 @@
                                 <th scope="col">Nama</th>
                                 <th scope="col">Jenis Kelamin</th>
                                 <th scope="col">Alamat</th>
-                                <th scope="col">Rt/Rw</th>
                                 <th scope="col">Kelurahan</th>
                                 <th scope="col">Kecamatan</th>
                                 <th scope="col">Kota</th>
-                                <th scope="col">Kategori</th>
-                                <th scope="col">Produk1</th>
-                                <th scope="col">Produk2</th>
-                                <th scope="col">Produk3</th>
-                                <th scope="col">Produk4</th>
-                                <th scope="col"s>Akun NIB</th>
-                                <th scope="col"s>Akun Halal</th>
-                                <th scope="col"s>Kendala</th>
-                                <th scope="col"s>Action</th>
+                                <th scope="col">Kode Pos</th>
+                                <th scope="col">Nama Usaha/Merek</th>
+                                <th scope="col">Produk 1</th>
+                                <th scope="col">Jenis Produk 1</th>
+                                <th scope="col">Produk 2</th>
+                                <th scope="col">Jenis Produk 2</th>
+                                <th scope="col">Produk 3</th>
+                                <th scope="col">Jenis Produk 3</th>
+                                <th scope="col">Produk 4</th>
+                                <th scope="col">Jenis Produk 4</th>
+                                <th scope="col">Akun NIB</th>
+                                <th scope="col">Akun Halal</th>
+                                <th scope="col">Kendala</th>
+                                <th scope="col">Jumlah Pengajuan</th>
+                                <th scope="col">Action</th>
                             </tr>
                             <?php
                             $i = 1;
@@ -82,7 +87,7 @@
                                         <?= $i++; ?>
                                     </td>
                                     <td>
-                                    <?php echo date('d/m/Y', strtotime($j['tanggal']))?>
+                                    <?php echo date('d-m-Y', strtotime($j['tanggal']))?>
                                     </td>
                                     <td>
                                         <?= $j['nik']; ?>
@@ -97,9 +102,6 @@
                                         <?= $j['alamat']; ?>
                                     </td>
                                     <td>
-                                        <?= $j['rtrw']; ?>
-                                    </td>
-                                    <td>
                                         <?= $j['kelurahan']; ?>
                                     </td>
                                     <td>
@@ -109,19 +111,34 @@
                                         <?= $j['kota']; ?>
                                     </td>
                                     <td>
-                                        <?= $j['kategori']; ?>
+                                        <?= $j['kodepos']; ?>
+                                    </td>
+                                    <td>
+                                        <?= $j['merek']; ?>
                                     </td>
                                     <td>
                                         <?= $j['produk1']; ?>
                                     </td>
                                     <td>
+                                        <?= $j['jenisproduk1']; ?>
+                                    </td>
+                                    <td>
                                         <?= $j['produk2']; ?>
+                                    </td>
+                                    <td>
+                                        <?= $j['jenisproduk2']; ?>
                                     </td>
                                     <td>
                                         <?= $j['produk3']; ?>
                                     </td>
                                     <td>
+                                        <?= $j['jenisproduk3']; ?>
+                                    </td>
+                                    <td>
                                         <?= $j['produk4']; ?>
+                                    </td>
+                                    <td>
+                                        <?= $j['jenisproduk4']; ?>
                                     </td>
                                     <td>
                                         <?= $j['akunnib']; ?>
@@ -131,6 +148,9 @@
                                     </td>
                                     <td>
                                         <?= $j['kendala']; ?>
+                                    </td>
+                                    <td>
+                                        <?= $j['pengajuan']; ?>
                                     </td>
 
                                     <td>

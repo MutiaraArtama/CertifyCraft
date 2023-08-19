@@ -7,7 +7,7 @@
 			</div>
         
 				<h3>Terima Kasih!</h3>
-				<p> Formulir Anda telah kami terima. <b><span style="color:yellow;">*event fiktif</span></b>
+				<p> Formulir Anda telah kami terima.
                 </p>
 			</center>
 		</div>

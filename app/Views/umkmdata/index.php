@@ -29,7 +29,6 @@
                     </form>
                 </div>
                 </div>
-
                 <div class="form-group col-6">
                 <div class="float-right">
                     <a href="<?php echo site_url('viewpdf'); ?>" target="_blank" class="btn btn-primary" style="height:40px; font-size: 17px ;" >View

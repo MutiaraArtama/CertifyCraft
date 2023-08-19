@@ -83,9 +83,9 @@ class Admin extends BaseController
                     ]
                 ],
                 'nik' => [
-                    'rules' => 'required',
+                    'rules' => 'required|min_length[16]',
                     'errors' => [
-                        'required' => 'NIK Tidak boleh kosong'
+                        'required' => 'NIK Tidak boleh kosong dan Harus berisi 16 nomor'
                     ]
                 ],
                 'nama' => [
@@ -204,7 +204,7 @@ class Admin extends BaseController
             "pengajuan" => $this->request->getPost('pengajuan'),
         ];
         $this->umkmdataModel->update($id, $data);
-
+        session()->setFlashdata('success', 'Data Berhasil diupdate');
         return redirect()->to('/Admin');
     }
 
@@ -216,6 +216,7 @@ class Admin extends BaseController
     public function delete($id)
     {
         $this->umkmdataModel->delete($id);
+        session()->setFlashdata('success', 'Data Berhasil dihapus');
         return redirect()->to('/Admin');
     }
 

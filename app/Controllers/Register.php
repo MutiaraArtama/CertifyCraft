@@ -73,7 +73,6 @@ class Register extends ResourceController
         ];
 
         $this->userModel->insert($data);
-        
         $this->session->setFlashdata('success', 'Berhasil membuat user!');
         return redirect()->to('/');
     }

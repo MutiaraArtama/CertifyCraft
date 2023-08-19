@@ -48,8 +48,9 @@
                                 <label for="kelamin" class="form-label">Jenis Kelamin</label>
                                 <select class="form-control" id="kelamin" name="kelamin" value="<?= old('kelamin'); ?>"
                                 style="height: 55px; vertical-align: top; font-size: 17px ;">
-                                    <option value="Pria">Laki-laki</option>
-                                    <option value="Wanita">Perempuan</option>
+                                    <option value="Pilih">--Pilih Jenis Kelamin--</option>
+                                    <option value="Pria" <?= old('kelamin') === 'Pria' ? 'selected' : ''; ?>>Laki-laki</option>
+                                    <option value="Wanita"<?= old('kelamin') === 'Wanita' ? 'selected' : ''; ?>>Perempuan</option>
                                 </select>
                             </div>
                             </div>
@@ -137,8 +138,9 @@
                                 <label for="akunnib" class="form-label">Apakah sudah mempunyai akun NIB? </label>
                                 <select class="form-control" id="akunnib" name="akunnib"
                                     value="<?= old('akunnib'); ?>" style="height: 55px; vertical-align: top; font-size: 17px ;">
-                                    <option value="Belum">Belum</option>
-                                    <option value="Sudah">Sudah</option>
+                                    <option value="Pilih">--Pilih--</option>
+                                    <option value="Belum" <?= old('akunnib') === 'Belum' ? 'selected' : ''; ?>>Belum</option>
+                                    <option value="Sudah" <?= old('akunnib') === 'Sudah' ? 'selected' : ''; ?>>Sudah</option>
                                 </select>
                             </div>
                             </div>
@@ -148,8 +150,9 @@
                                 <label for="akunhalal" class="form-label">Apakah sudah mempunyai akun untuk Seritifikat Halal? </label>
                                 <select class="form-control" id="akunhalal" name="akunhalal"
                                     value="<?= old('akunhalal'); ?>" style="height: 55px; vertical-align: top; font-size: 17px ;">
-                                    <option value="Belum">Belum</option>
-                                    <option value="Sudah">Sudah</option>
+                                    <option value="Pilih">--Pilih--</option>
+                                    <option value="Belum" <?= old('akunhalal') === 'Belum' ? 'selected' : ''; ?>>Belum</option>
+                                    <option value="Sudah" <?= old('akunhalal') === 'Sudah' ? 'selected' : ''; ?>>Sudah</option>
                                 </select>
                             </div>
                             </div>

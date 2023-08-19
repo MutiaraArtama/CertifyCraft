@@ -172,11 +172,11 @@
                                 <select class="form-control" id="akunnib" name="akunnib"
                                     value="<?= $Admin['akunnib'] ?>" style="height: 55px; vertical-align: top; font-size: 17px ;">
                                     <option value="Pilih">--Pilih--</option>
-                                    <option value="Belum">Belum</option>
-                                    <option value="Sudah">Sudah</option>
-                                    <option value="Selesai">Selesai</option>
-                                    <option value="Double">Double</option>
-                                    <option value="Tidak Bisa Dilanjut">Tidak Bisa Dilanjut</option>
+                                    <option value="Belum" <?= $Admin['akunnib'] === 'Belum' ? 'selected' : ''; ?> >Belum</option>
+                                    <option value="Sudah" <?= $Admin['akunnib'] === 'Sudah' ? 'selected' : ''; ?> >Sudah</option>
+                                    <option value="Selesai"<?= $Admin['akunnib'] === 'Selesai' ? 'selected' : ''; ?> >Selesai</option>
+                                    <option value="Double" <?= $Admin['akunnib'] === 'Double' ? 'selected' : ''; ?> >Double</option>
+                                    <option value="Tidak Bisa Dilanjut" <?= $Admin['akunnib'] === 'Tidak Bisa Dilanjut' ? 'selected' : ''; ?> >Tidak Bisa Dilanjut</option>
                                 </select>
                             </div>
                             </div>
@@ -187,11 +187,11 @@
                                 <select class="form-control" id="akunhalal" name="akunhalal"
                                     value="<?= $Admin['akunhalal'] ?>" style="height: 55px; vertical-align: top; font-size: 17px ;">
                                     <option value="Pilih">--Pilih--</option>
-                                    <option value="Belum">Belum</option>
-                                    <option value="Sudah">Sudah</option>
-                                    <option value="Selesai">Selesai</option>
-                                    <option value="Double">Double</option>
-                                    <option value="Tidak Bisa Dilanjut">Tidak Bisa Dilanjut</option>
+                                    <option value="Belum" <?= $Admin['akunhalal'] === 'Belum' ? 'selected' : ''; ?> >Belum</option>
+                                    <option value="Sudah" <?= $Admin['akunhalal'] === 'Sudah' ? 'selected' : ''; ?> >Sudah</option>
+                                    <option value="Selesai"<?= $Admin['akunhalal'] === 'Selesai' ? 'selected' : ''; ?> >Selesai</option>
+                                    <option value="Double" <?= $Admin['akunhalal'] === 'Double' ? 'selected' : ''; ?> >Double</option>
+                                    <option value="Tidak Bisa Dilanjut" <?= $Admin['akunhalal'] === 'Tidak Bisa Dilanjut' ? 'selected' : ''; ?> >Tidak Bisa Dilanjut</option>
                                 </select>
                             </div>
                             </div>
@@ -202,11 +202,11 @@
                                 <select class="form-control" id="pengajuan" name="pengajuan"
                                     value="<?= $Admin['pengajuan'] ?>" style="height: 55px; vertical-align: top; font-size: 17px ;">
                                     <option value="Pilih">--Pilih--</option>
-                                    <option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
+                                    <option value="0" <?= $Admin['pengajuan'] === '0' ? 'selected' : ''; ?> >0</option>
+                                    <option value="1" <?= $Admin['pengajuan'] === '1' ? 'selected' : ''; ?> >1</option>
+                                    <option value="2" <?= $Admin['pengajuan'] === '2' ? 'selected' : ''; ?> >2</option>
+                                    <option value="3" <?= $Admin['pengajuan'] === '3' ? 'selected' : ''; ?> >3</option>
+                                    <option value="4" <?= $Admin['pengajuan'] === '4' ? 'selected' : ''; ?> >4</option>
                                 </select>
                             </div>
                             </div>
@@ -219,7 +219,7 @@
                             </div>
 
                 <div class="text-center">
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="submit" class="btn btn-primary">Save</button>
                   <button type="reset" class="btn btn-secondary">Reset</button>
                 </div>
               </form><!-- End Multi Columns Form -->

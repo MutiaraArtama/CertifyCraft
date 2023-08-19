@@ -24,10 +24,6 @@
                         <th>Kecamatan</th>
                         <th>Kota</th>
                         <th>Nama Usaha</th>
-                        <th>Produk 1</th>
-                        <th>Produk 2</th>
-                        <th>Produk 3</th>
-                        <th>Produk 4</th>
                         <th>Status Akun NIB</th>
                         <th>Status Akun Halal</th>
                         <th>Kendala</th>
@@ -64,18 +60,6 @@
                             </td>
                             <td>
                                 <?= $j['merek']; ?>
-                            </td>
-                            <td>
-                                <?= $j['produk1']; ?>
-                            </td>
-                            <td>
-                                <?= $j['produk2']; ?>
-                            </td>
-                            <td>
-                                <?= $j['produk3']; ?>
-                            </td>
-                            <td>
-                                <?= $j['produk4']; ?>
                             </td>
                             <td>
                                 <?= $j['akunnib']; ?>

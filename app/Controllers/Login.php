@@ -72,19 +72,12 @@ class Login extends ResourceController
             ->where('username', $username)
             ->first();
 
-            if (!$user) {
-                $data = [
-                    'error' => 'username salah'
-                ];
-                return view('login', $data);
-                // throw new \Exception("User not found!");
-            }
-
             if (md5($password) != $user['password']) {
                 $data = [
-                    'error' => 'password salah'
+                    'error' => 'Username atau Password salah'
                 ];
-                return view('login', $data);
+                echo view('auth/login', $data);
+                return;
                 // throw new \Exception("Credentials is invalid!");
             }
 

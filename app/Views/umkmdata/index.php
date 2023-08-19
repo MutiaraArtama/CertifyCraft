@@ -50,7 +50,7 @@
                             <?php echo session()->getFlashdata('success'); ?>
                         </div>
                     <?php endif; ?>
-                    <table class="table table-striped table-md">
+                    <table class="table table-md">
                         <tbody>
                             <tr>
                                 <th scope="col">No</th>
@@ -155,15 +155,16 @@
 
                                     <td>
                                         <a href="/Admin/<?= $j['id'] ?>/edit" class="btn btn-warning btn-sm"><i
-                                                class="fas fa-pencil-alt"></i></a>
-
+                                                class="fas fa-pencil-alt"></i> Edit</a>
+                                        <p>
                                         <form action="/Admin/<?= $j['id'] ?>" method="post" class="d-inline"
                                             onsubmit="return confirm(`Are you sure?`)">
                                             <input type="hidden" name="_method" value="delete" />
                                             <button type="submit" class="btn btn-danger btn-sm"><i
-                                                    class="fas fa-trash"></i></button>
-                                        </form>
+                                                    class="fas fa-trash"></i> Hapus </button>
+                                        </form></p>
                                     </td>
+
 
                                 </tr>
                             <?php endforeach; ?>

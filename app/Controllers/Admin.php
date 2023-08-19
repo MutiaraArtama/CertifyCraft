@@ -29,7 +29,7 @@ class Admin extends BaseController
         if ($keyword) {
             $umkm = $this->umkmdataModel->search($keyword);
         } else {
-            $umkm = $this->umkmdataModel;
+            $umkm = $this->umkmdataModel->orderBy('id', 'DESC');
         }
 
         $data = [

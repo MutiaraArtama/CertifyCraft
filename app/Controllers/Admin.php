@@ -34,8 +34,9 @@ class Admin extends BaseController
 
         $data = [
             'tittle' => "Data List",
-            'umkmdata' => $umkm->paginate(50, 'umkmdata'),
-            'pager' => $this->umkmdataModel->pager
+            'umkmdata' => $umkm->findAll(),
+            // 'umkmdata' => $umkm->paginate(50, 'umkmdata'),
+            // 'pager' => $this->umkmdataModel->pager
         ];
 
 

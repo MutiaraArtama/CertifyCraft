@@ -47,27 +47,30 @@
         .btn-cc:hover {
             background-color: #FFE1EB;
         }
+        .back-button {
+        font-size: 17px; /* Menyesuaikan ukuran teks */
+        text-decoration: none;
+        color: #333; /* Warna teks */
+        margin-bottom: 10px; /* Memberikan sedikit ruang di bawah tombol */
+    }
     </style>
 </head>
 
 <body>
 
 <div class="container py-5 h-100">
+
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-xl-10">
         <div class="card" style="border-radius: 1rem;">
           <div class="row g-0">
 
-          <div class="col-md-6">
-          <div class="card h-100">
-            <div class="image-container">
-                        <img src="/img/logohalal2.png" style="width: 450px; border-radius: 1rem;" alt="login form" class="img-fluid"/>
-                    </div>
-            </div>
-            </div>
-
+          
             <div class="col-lg-6">
               <div class="card-body p-4 p-lg-5">
+
+                  <!-- Tambahkan baris ini untuk tombol "Back" -->
+                <a href="javascript:history.back()" class="back-button"><span>&#8592;</span> Back</a>
 
                 <div class="text-center">
                   <img src="/img/rhn.png"
@@ -128,6 +131,15 @@
                         </form>
                         </div>
                     </div>
+                    
+                    <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="image-container">
+                                    <img src="/img/logohalal2.png" style="width: 450px; border-radius: 1rem;" alt="login form" class="img-fluid"/>
+                                </div>
+                        </div>
+                    </div>
+
                     </div>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 <?= $this->extend('base2') ?>
 <?= $this->section('content') ?>
+
 <main id="main" class="main">
 
     <div class="pagetitle">
@@ -12,11 +13,10 @@
       </nav>
     </div><!-- End Page Title -->
 
-
     <section class="section">
         <div class="section-header" >
-        <div class="form-group col-6">
-                <div class="float-center ml-2">
+        <div class="form-group col-12">
+                <!-- <div class="float-center ml-2">
                     <form action="" method="get">
                         <div class="float-left">
                             <input type="text" name="keyword" class="form-control" style="width:250pt; height:40px;"
@@ -29,7 +29,7 @@
                     </form>
                 </div>
                 </div>
-                <div class="form-group col-6">
+                <div class="form-group col-6"> -->
                 <div class="float-right">
                     <a href="<?php echo site_url('viewpdf'); ?>" target="_blank" class="btn btn-primary" style="height:40px; font-size: 17px ;" >View
                         PDF</a>
@@ -43,16 +43,15 @@
             <div class="card">
 
             <div class="card-body">
-                <div class="card-body table-responsive">
                     <?php if (!empty(session()->getFlashdata('success'))): ?>
                         <div class="alert alert-success" role="alert">
                             <?php echo session()->getFlashdata('success'); ?>
                         </div>
                     <?php endif; ?>
-                    <table class="table table-md">
-                        <tbody>
+                    <table class="table table-responsive table-borderless dataTable ">
+                        <thead> 
                             <tr>
-                                <th scope="col">No</th>
+                                <th style = "min-width: 10px; max-width: 10px;">No</th>
                                 <th scope="col">Tanggal</th>
                                 <th scope="col">NIK</th>
                                 <th scope="col">Nama</th>
@@ -77,6 +76,8 @@
                                 <th scope="col">Jumlah Pengajuan</th>
                                 <th scope="col">Action</th>
                             </tr>
+                    </thead>
+                            <tbody>
                             <?php
                             $i = 1;
                             foreach ($umkmdata as $j):
@@ -169,12 +170,8 @@
                             <?php endforeach; ?>
                         </tbody>
                     </table>
-                </div>
             </div>
         
-        <div class="col-12">
-            <?= $pager->links('umkmdata', 'custom_pagination') ?>
-        </div>
         </div>
 </div>
 </div>

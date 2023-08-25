@@ -98,6 +98,19 @@
                             <label for="name">Name</label>
                             <input type="text" name="name" id="name" class="form-control" required>
                         </div>
+
+                        <div class="form-group">
+                        <label for="role">Role</label>
+                            <select class="form-control" id="role" name="role" value="<?= old('role'); ?>">
+                            <option value="-">--Pilih Role--</option>    
+                            <option value="1">Super Admin</option>
+                                <option value="2">Admin</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                please fill in your role
+                            </div>
+                        </div>
+
                         <div class="form-group">
                             <label for="username">Username</label>
                             <input type="text" name="username" id="username" class="form-control" required>

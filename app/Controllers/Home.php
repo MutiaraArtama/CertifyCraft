@@ -7,9 +7,12 @@ use App\Models\UmkmDataModel;
 class Home extends BaseController
 {
     protected $umkmdataModel;
+    protected $session;
+
     public function __construct()
     {
         $this->umkmdataModel = new UmkmDataModel();
+        $this->session = \Config\Services::session(); // Tambahkan ini
     }
     public function index()
     {
@@ -62,6 +65,12 @@ class Home extends BaseController
             'thread_per_kategori' => $jumlah_per_kecamatan,
         ];
 
-        return view('home', $data);
+       $userRoleId = $this->session->get('role');
+        
+        if ($userRoleId == 1) {
+            return view('home', $data);
+        } else {
+            return view('homeadmin', $data);
+        }
     }
 }

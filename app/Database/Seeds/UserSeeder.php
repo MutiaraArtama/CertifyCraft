@@ -12,6 +12,16 @@ class UserSeeder extends Seeder
             'name' => 'mutiara',
             'username' => 'mutiara@gmail.com',
             'password' => md5("secret"),
+            'role' => '1',
+        ];
+
+        // Simple Queries
+        $this->db->table('users')->insert($data);
+        $data = [
+            'name' => 'azzahrani',
+            'username' => 'azzahrani@gmail.com',
+            'password' => md5("secret"),
+            'role' => '2',
         ];
 
         // Simple Queries

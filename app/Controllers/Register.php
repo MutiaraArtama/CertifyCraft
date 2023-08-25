@@ -63,17 +63,22 @@ class Register extends ResourceController
         ]);
         if (!$validate) {
             session()->setFlashdata('errors', $this->validator->listErrors());
-            return redirect()->to('/register')->withInput();
+            return redirect()->to('/login')->withInput();
         }
 
+        $name = $this->request->getPost('name');
+        $username = $this->request->getPost('username');
+        $password = $this->request->getPost('password');
+
         $data = [
+            'role_id' => 2,
             "name" => $this->request->getPost('name'),
             "username" => $this->request->getPost('username'),
             "password" => md5($this->request->getPost('password')),
         ];
 
         $this->userModel->insert($data);
-        $this->session->setFlashdata('success', 'Berhasil membuat user!');
+        $this->session->setFlashdata('success', 'Berhasil membuat admin!');
         return redirect()->to('/');
     }
 

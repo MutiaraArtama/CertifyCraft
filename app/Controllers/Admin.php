@@ -39,8 +39,13 @@ class Admin extends BaseController
             // 'pager' => $this->umkmdataModel->pager
         ];
 
-
-        return view('umkmdata/index', $data);
+            // Check the user's role_id
+        $userRoleId = $this->session->get('role');
+        if ($userRoleId == 1) {
+            return view('umkmdata/index', $data);
+        } else {
+            return view('umkmdataadmin/index', $data);
+        }
     }
 
     /**

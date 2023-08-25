@@ -71,7 +71,7 @@ class Login extends ResourceController
         $user = $this->userModel
             ->where('username', $username)
             ->first();
-
+            
             if (md5($password) != $user['password']) {
                 $data = [
                     'error' => 'Username atau Password salah'
@@ -81,9 +81,24 @@ class Login extends ResourceController
                 // throw new \Exception("Credentials is invalid!");
             }
 
+            if ($user['role'] == 2) {
+                $this->session->setFlashdata('success', "Selamat datang " . $user['name']);
+                $this->session->set([
+                    'id' => $user['id'],
+                    'name' => $user['name'],
+                    'username' => $user['username'],
+                    'role' => $user['role']
+                ]);
+                $this->session->set('loggedIn', true);
+                return redirect()->to('/');
+            }
+
         $this->session->set('id', $user['id']);
         $this->session->set('name', $user['name']);
+        $this->session->set('username', $user['username']);
+        $this->session->set('role', $user['role']);
         $this->session->set('loggedIn', true);
+        $this->session->setFlashdata('alert', "Selamat datang " . $user['name']);
         return redirect()->to('/');
     }
 

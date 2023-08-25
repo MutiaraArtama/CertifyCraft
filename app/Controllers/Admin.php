@@ -70,7 +70,12 @@ class Admin extends BaseController
             'tittle' => "Add Data"
         ];
 
-        return view('umkmdata/upload', $data);
+        $userRoleId = $this->session->get('role');
+        if ($userRoleId == 1) {
+            return view('umkmdata/upload', $data);
+        } else {
+            return view('umkmdataadmin/upload', $data);
+        }
     }
 
     /**
@@ -188,7 +193,13 @@ class Admin extends BaseController
             'tittle' => "Edit Data",
             'Admin' => $this->umkmdataModel->getUmkmData($id)
         ];
-        echo view('umkmdata/edit', $data);
+
+        $userRoleId = $this->session->get('role');
+        if ($userRoleId == 1) {
+            return view('umkmdata/edit', $data);
+        } else {
+            return view('umkmdataadmin/edit', $data);
+        }
 
     }
 

@@ -1,4 +1,4 @@
-<?= $this->extend('baseAdmin') ?>
+<?= $this->extend('baseAdmin2') ?>
 <?= $this->section('content') ?>
 
 <main id="main" class="main">

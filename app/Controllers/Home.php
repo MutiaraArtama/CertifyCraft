@@ -67,10 +67,10 @@ class Home extends BaseController
 
        $userRoleId = $this->session->get('role');
         
-        if ($userRoleId == 1) {
-            return view('home', $data);
-        } else {
+        if ($userRoleId == 2) {
             return view('homeadmin', $data);
+        } else {
+            return view('home', $data);
         }
     }
 }

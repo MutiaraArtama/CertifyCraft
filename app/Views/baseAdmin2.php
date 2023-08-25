@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <?= $this->include('layouts/head2') ?>
+    <?= $this->include('layouts/head') ?>
 </head>
 
 <body>

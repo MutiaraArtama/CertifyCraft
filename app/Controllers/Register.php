@@ -63,7 +63,7 @@ class Register extends ResourceController
         ]);
         if (!$validate) {
             session()->setFlashdata('errors', $this->validator->listErrors());
-            return redirect()->to('/login')->withInput();
+            return redirect()->to('/register')->withInput();
         }
 
         $name = $this->request->getPost('name');
@@ -71,7 +71,7 @@ class Register extends ResourceController
         $password = $this->request->getPost('password');
 
         $data = [
-            'role_id' => 2,
+            "role" => $this->request->getPost('role'),
             "name" => $this->request->getPost('name'),
             "username" => $this->request->getPost('username'),
             "password" => md5($this->request->getPost('password')),
